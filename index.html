@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -139,17 +140,108 @@
 
         </section>
 
-        <!-- Registration Section -->
-        <section class="cta-section">
+       
+                <!-- Registration Section -->
+<section class="cta-section">
 
-            <div class="container cta-container">
+    <div class="container cta-container">
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-KxskUdhH24kAUCfMzalPUw1ma6T-HXuVIzr8y5F_E1CCHw/viewform?pli=1&pli=1&fbzx=7951251719313999111"
-                   target="_blank"
-                   class="register-btn">
-                    REGISTER NOW
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+        <h2 style="text-transform: uppercase;">Register for the Workshop</h2>
+        <p style="text-transform: uppercase;">Fill in your details below and we'll contact you with more information.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="registration-form">
+
+            <input type="hidden" name="access_key" value="923a9d78-eeb2-4aa6-8c01-19e94b75520f">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="residence">Residence</label>
+                <input type="text" id="residence" name="residence" placeholder="City / State" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="10" max="80" placeholder="Enter your age" required>
+            </div>
+
+           <div class="form-group">
+    <label>Gender</label>
+
+   
+
+    <div class="gender-group">
+        <label>
+            <input type="radio" name="gender" value="Male" required>
+            Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="Female">
+            Female
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="Other">
+            Other
+        </label>
+    </div>
+</div>
+
+            <div class="form-group">
+                <label for="experience">Programming Experience</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select Experience</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course Interested In</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a Course</option>
+                    <option>Data Analysis</option>
+                    <option>T-SQL Database Management</option>
+                    <option>Python for Data Science</option>
+                    <option>Sentiment Analysis</option>
+                    <option>Internet of Things (IoT)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why do you want to join?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us a little about yourself..." required></textarea>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Submit Registration
+                <i class="fas fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+        
+
+        </div>
+
+    </div>
+
+</section>
 
                 <div class="social-block">
 
