@@ -1,4 +1,3 @@
-
 /* Base Reset & Variables */
 :root {
     --bg-dark: #0f172a;
@@ -232,61 +231,180 @@ h1{
     gap:40px;
 }
 
-.register-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        #1d4ed8
-    );
+.registration-form{
+    max-width:500px;
+    width:100%;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background:rgba(30,41,59,0.85);
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.registration-form h2,
+.registration-form p{
+    text-align:center;
     color:#fff;
-    padding:16px 40px;
-    font-size:1.2rem;
-    font-weight:700;
-    text-decoration:none;
-    border-radius:50px;
-    box-shadow:0 10px 20px rgba(59,130,246,.3);
-    transition:.3s ease;
 }
 
-.register-btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 15px 30px rgba(59,130,246,.4);
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    text-align: center;
 }
 
-/* Social Icons */
+.form-group label{
+    color:#fff;
+    font-weight:600;
+    
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#00b4ff;
+    box-shadow:0 0 8px rgba(0,180,255,.4);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* Gender radio buttons */
+.gender-title{
+    display:block;
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:15px;
+    text-align:left;
+}
+
+.gender-group{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.gender-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.gender-group input[type="radio"]{
+    width:18px;
+    height:18px;
+    accent-color:#00b4ff;
+    cursor:pointer;
+}
+/* Button */
+.registration-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#007bff;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.registration-form button:hover{
+    background:#0056d6;
+    transform:translateY(-2px);
+}
+
+/* Social Section */
+.social-block{
+    margin-top:40px;
+    text-align:center;
+}
+
 .social-block p{
-    color:var(--text-muted);
-    margin-bottom:10px;
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:20px;
 }
 
+/* Social Icons Container */
 .social-icons{
     display:flex;
-    gap:20px;
     justify-content:center;
-}
-
-.social-icons a{
-    color:var(--text-light);
-    background:rgba(30,41,59,.9);
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    display:flex;
     align-items:center;
-    justify-content:center;
-    font-size:1.2rem;
-    text-decoration:none;
-    border:1px solid #334155;
-    transition:.3s ease;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
+/* Individual Icons */
+.social-icons a{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    background:rgba(255,255,255,0.12);
+    color:#fff;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+    font-size:24px;
+    transition:all 0.3s ease;
+    backdrop-filter:blur(10px);
+}
+
+/* Hover Effect */
 .social-icons a:hover{
-    background:var(--primary);
-    transform:scale(1.1);
-    border-color:var(--primary);
+    transform:translateY(-6px) scale(1.1);
+    background:#00b4ff;
+    border-color:#00b4ff;
+    box-shadow:0 10px 20px rgba(0,180,255,.4);
+}
+
+/* Brand Colors on Hover */
+.social-icons a:nth-child(1):hover{
+    background:#25D366;
+    border-color:#25D366;
+}
+
+.social-icons a:nth-child(2):hover{
+    background:#E4405F;
+    border-color:#E4405F;
+}
+
+.social-icons a:nth-child(3):hover{
+    background:#1877F2;
+    border-color:#1877F2;
+}
+
+.social-icons a:nth-child(4):hover{
+    background:#000;
+    border-color:#000;
 }
 
 
